@@ -1,0 +1,16 @@
+/* This is for the case when user has turned off js - it should still look
+ * nice */
+#bodycontent h3 {
+    background: #DFF;
+    display: block;
+}
+
+div#bodycontent {
+    margin: 15px;
+}
+
+
+#bodycontent li {
+    padding: 0px;
+}
+

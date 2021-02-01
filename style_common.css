@@ -1,0 +1,114 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    background: #FFF;
+    color: #000;
+}
+body {
+    margin: 5px;
+    background: #FFF;
+    color: #000;
+    font-family: "Verdana",
+                 "DejaVu Sans", "Bitstream Vera Sans",
+                 "Sans Serif", "Sans", "Serif";
+    font-size: 100%;
+    line-height: 180%;
+}
+
+div#foot {
+    font-size: 50%;
+    margin-top: 10em;
+    text-align: center;
+    vertical-align: center;
+}
+#foot a:link {
+    text-decoration: none;
+}
+
+
+div#headcenter {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    height: 160px;
+    background: url("header.jpg") no-repeat;
+    background-size: 100%;
+}
+div#headtable table {
+    margin: auto;
+    margin-top: 5px;
+    width: 50%;
+    vertical-align: middle;
+}
+div#headtable a {
+    color: #000;
+    text-decoration: none;
+    background: none;
+}
+div#headtable td {
+    width: 25%;
+    padding: 0;
+}
+
+div#bodyborder {
+    margin: 0 auto;
+    margin-top: 30px;
+    min-width: 400px;
+    max-width: 900px;
+    /*margin-left: 15%;
+    margin-right: 15%;*/
+    text-align: justify;
+    border: 1px solid #bbb;
+    border-top-left-radius: 2mm;
+    border-top-right-radius: 2mm;
+}
+
+div#bodycontent {
+    color: #362B36;
+}
+
+#bodycontent h1, h2, h3, h4 {
+    color: #000;
+}
+
+#bodycontent p, ul, ol {
+    line-height: 180%;
+}
+
+#bodycontent li {
+    padding-bottom: 15px;
+}
+
+a:link {
+    text-decoration: underline;
+    color: #00F;
+}
+a:visited {
+    text-decoration: none;
+    color: #00F;
+}
+a:hover {
+    background: #FFFAC2;
+    text-decoration: none;
+    color: #F00;
+}
+a:focus {
+    background: #FFFAC2 !important;
+    color: #F00;
+}
+
+
+/* Tooltip for jquery ui tooltip */
+.ui-tooltip {
+    width: 40%;
+    border: 1px solid #88b;
+    padding: 5px;
+    background: #EEF7FF;
+    box-shadow: 0 0 12px #99f;
+    line-height: 150%;
+}
+

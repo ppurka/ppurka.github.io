@@ -1,0 +1,37 @@
+#bodycontent h3 {
+    margin: 15px;
+    margin-left: 20px;
+}
+
+#bodycontent h4 {
+    margin: 15px;
+    margin-left: 25px;
+}
+
+#bodycontent p, ul, ol {
+    margin: 15px;
+    margin-left: 35px;
+}
+
+.bodyheadingh2 {
+    color: #000;
+    margin: 0px;
+    margin-top: 80px;
+    border-top: 1px solid #bbb;
+    border-top-left-radius: 2mm;
+    border-top-right-radius: 2mm;
+    background: url("h2.jpg");
+    background-repeat: repeat-x;
+}
+
+div#maintable table {
+    margin: auto;
+    margin-top: 35px;
+    width: 70%;
+    background-color: #DEFFDE;
+    border: 1px solid #CFC;
+    border-radius: 2mm;
+}
+div#maintable td {
+    width: 20%;
+}

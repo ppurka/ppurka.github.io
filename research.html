@@ -1,0 +1,801 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page of Punarbasu Purkayastha - Research">
+    <title>Research - Punarbasu Purkayastha</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+
+    <!-- Load jquery CSS -->
+    <link type="text/css" href="css/custom-theme/jquery-ui-1.9.1.custom.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style_common.css" type="text/css">
+    <link rel="stylesheet" href="style_research.css" type="text/css">
+
+    <!-- Load jquery - try first from google servers -->
+    <script type="text/javascript"
+        src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js">
+    </script>
+    <!-- If jquery is not loaded try from local cache -->
+    <script type="text/javascript">window.jQuery || document.write(
+        '<script type="text/javascript" src="js/jquery-1.8.2.min.js"><\/script>')
+    </script>
+
+    <!-- Load the jquery ui - try first from google servers -->
+    <script type="text/javascript"
+        src="//ajax.googleapis.com/ajax/libs/jquery-ui/1.9.1/jquery-ui.min.js">
+    </script>
+    <!-- if jquery ui is not loaded try from local cache -->
+    <script type="text/javascript">window.jQuery.ui || document.write(
+        '<script type="text/javascript" src="js/jquery-ui-1.9.1.custom.min.js"><\/script>')
+    </script>
+
+
+    <!-- load accordion -->
+    <script type="text/javascript">
+    	$(function(){
+            $("#accordion").accordion({
+                autoHeight: false,
+                animated: true,
+                collapsible: true,
+                event: "click",
+                header: "h3"
+             });
+        });
+    </script>
+    <!-- load the tooltip -->
+    <script type="text/javascript">
+        $(function(){
+            $( document ).tooltip();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="headcenter">
+    </div>
+    <div id="headtable">
+        <table border="0" width="50%">
+            <tr>
+                <td align="right">
+                    <a href="index.html">
+                    <img src="home.png" height="25" width="25" alt="home">
+                    </a>
+                </td>
+                <td align="left">
+                    <a href="index.html">
+                    <span style="vertical-align: middle; font-size: 200%">Home</span></a>
+                </td>
+                <td align="right"
+                    style="background-color: #FFFFDE;
+                           border: 1px solid #FFFF88;
+                           border-radius: 15px 0px 0px 15px;
+                           width: 12%;">
+                    <a href="research.html">
+                    <img src="book.png" height="25" width="25" alt="research">
+                    </a>
+                </td>
+                <td align="left"
+                    style="background-color: #FFFFDE;
+                           border: 1px solid #FFFF88;
+                           border-radius: 0px 15px 15px 0px;">
+                    <a href="research.html">
+                    <span style="vertical-align: middle; font-size:
+                        200%">Research</span></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="bodyborder">
+    <div id="bodycontent">
+    <h3 style="text-align: left; border-bottom: 1px dashed #999; display:
+        inline;" title="Too Long; Didn't Read">TL;DR version</h3>: My
+    research had primarily focused on determining constructions and
+    decoding of error correcting codes for improving the reliability of
+    communication and storage systems. The other focus of my research was on
+    determining limits on the best parameters that an error correcting code
+    can have.
+
+
+    <h2 style="text-align: center; padding-top: 3em;">Short version</h2>
+    <h3><strong>Construction of codes for nonvolatile (flash)
+            memories</strong></h3>
+    We considered multilevel flash memories in this work. We provided
+    constructions of codes from cosets of linear codes that can provide
+    error correction against charge leakage due to aging in flash memory,
+    improve rewritability leading to fewer erasure operations, and also
+    correct against random errors.
+    <h3><strong>Improving reliability of communication over power line
+            communications</strong></h3>
+    We provide coding and decoding schemes that can help counter the harsh
+    noisy environment in a power line communication medium. Communication
+    over the power line channel is of interest because of its use in the
+    so-called "smart grid".
+    The noise characteristics of the power line channel include permanent
+    narrowband noise that is present for a long time, impulse noise that is
+    a high energy noise present for a short period of time, and
+    additionally Gaussian noise and fading.
+    <br>
+    We introduced a new parameter that helps us determine error correcting
+    codes that are optimal for correcting permanent narrowband noise in the
+    channel. This extends the analysis of the coded modulation scheme by
+    Vinck 2000. We also determined new constructions of efficiently
+    decodable permutation codes that are obtained by
+    distance-preserving embeddings of the Hamming space into the space of
+    all permutation vectors.
+    <br>
+    To generalize Vinck's construction to codes that are efficiently
+    decodable, but whose block lengths are not restricted by the alphabet
+    size (for example permutation codes have this restriction), we
+    used a coded modulation scheme that uses multitone frequency shift
+    keying as the modulation scheme. We showed that by taking products of
+    affine codes (a linear code shifted by a constant nonzero vector), it
+    is possible to obtain "good" codes that are also efficiently decodable.
+
+    <h3><strong>Construction of optimal sequences for frame
+            synchronization</strong></h3>
+    Cross-bifix-free codes, useful in frame synchronization, require that
+    a prefix of any length of any codeword is not the suffix of any
+    codeword. We constructed such codes of nearly optimal size, which
+    generalize a previous binary construction to q-ary alphabets and
+    arbitrary lengths.
+    
+    <h3><strong>Construction of optimal linear codes from generalized
+        Hadamard matrices</strong></h3>
+    We provided construction of q-ary optimal linear codes from generalized
+    Hadamard matrices, that are self-complementary, i.e., the all-one
+    vector belongs to the code. Optimality is shown with respect to the
+    generalized Grey-Rankin bound and the Griesmer bound.
+    
+    <h3><strong>Bounds and codes in the ordered Hamming space</strong></h3>
+    The ordered Hamming metric arises in multiple contexts, including
+    numerical integration of functions, parallel fading channels, and
+    in the study of linear complexity of periodic sequences.
+    <br>
+    We provided new bounds, namely, an Elias bound and Linear Programming
+    bounds, on the size of codes in the ordered Hamming space. To establish
+    the Linear Programming bounds, we established new properties of certain
+    multivariate orthogonal polynomials called the multivariate Krawtchouk
+    polynomials.
+    <br>
+    We generalized the notion of near-Maximum Distance Separable codes to
+    the ordered Hamming space and to the poset space, and established
+    equivalence relations between near-Maximum Distance Separable codes and
+    uniform distributions of point sets in the unit cube that are useful
+    for numerical integration.
+    
+    <h2 style="text-align: center; padding-top: 3em;">Long version</h2>
+
+    <h2 id="publications">Accomplished research - Publications and preprints
+    <span style="font-size: 0.55em;">(by area)<br>
+    The author names are in alphabetical order.</span></h2>
+    <div id="accordion">
+    <h3><a href="#">
+            <strong>Nonvolatile (flash) memories</strong>
+        </a>
+    </h3>
+    <div>
+        <ol>
+        <li>
+        <span class="jqtooltip"
+            title="Flash memory is a nonvolatile memory technology that
+suffers from errors due to charge leakage, can tolerate limited erasures,
+and where erasures have to be performed in large blocks.  We show that
+using cosets of a linear code can provide correction against uniform charge
+leakage, and can enhance the rewritability of flash memory which leads to
+fewer erasures. We introduce two coset coding schemes that are
+generalizations of the scheme in Jacobvitz et al. (2013). For the same
+worst case rewrite cost, we show that coset codes can encode more
+information than rank modulation codes.  The average case performance of
+coset codes is demonstrated via numerical simulations. (Click for pdf)">
+            <a href="files/CKP_coset.pdf">Rewritable Coset Coding for Flash
+            Memories</a></span>,
+        <br>
+        Yeow Meng Chee, Han Mao Kiah, and Punarbasu Purkayastha,
+        <br>
+        IEEE International Symposium on
+        Information Theory (ISIT) 2014, Honolulu, Hawaii, USA, pp. 2082 - 2086.
+        <br>
+        <a href="files/CKP_coset_full.pdf">Extended version with all proofs</a>
+        <br>
+        <a href="https://github.com/ppurka/papers/tree/master/flash_memory">
+            Source code of simulations</a><br><br>
+    <p>We considered multilevel flash memories in this work. We provided
+    constructions of codes from cosets of linear codes that can provide
+    error correction against charge leakage due to aging in flash memory,
+    improve rewritability leading to fewer erasure operations, and also
+    correct against random errors.</p>
+        </li>
+        </ol>
+    </div>
+    <h3><a href="#"><strong>Power line Communications</strong></a></h3>
+        <div>
+            <p>Communication over a power line channel has been a subject of
+            study and application since the 1950s. Recent research has been
+            focused on two-way communication over this channel. The channel
+            characteristics are harsh, with the presence of permanent
+            narrowband noise which may be present at a particular frequency
+            at all time instances of transmission, impulse noise which may
+            be present at all frequencies in a particular time instance,
+            fading, and Gaussian noise.
+            <br><br>
+
+            <a href="http://arxiv.org/pdf/1104.1528" title="A.J.H. Vinck, Coded Modulation for Power Line Communications, AEU Journal, pp. 45-49, Jan 2000">Vinck
+                2000</a>, proposed the use of M-ary frequency shift
+            keying modulation, along with the use of permutation codes, in
+            which every symbol of the alphabet occurs exactly once in every
+            codeword. Each
+            symbol of the alphabet is transmitted on a separate frequency.
+            This modulation scheme helps to counter the harsh nature of
+            this channel; in particular to correct errors arising from the
+            permanent narrowband noise and impulse noise.
+            The research has since diverged into using
+            <i>frequency permutation arrays</i>, in which every symbol of
+            the alphabet occurs equal number of times in every codeword,
+            <i>constant composition codes</i>, in which every symbol of
+            the alphabet occurs a fixed number of times in every codeword,
+            and <i>injection codes</i>, in which every symbol occurs at
+            most once in every codeword.<br><br>
+            There has also been a significant amount of research over the
+            past decade in determining permutation codes, frequency
+            permutation arrays, and constant composition codes by using
+            distance preserving maps from the binary and ternary Hamming
+            space. The distance preserving maps ensure that the distance
+            between two vectors in the Hamming space is either maintained
+            or increased when mapped to the space of permutations,
+            frequency permutation arrays, or the constant composition
+            space.<br><br>
+            Our work in this area is described below.
+            </p>
+        <ol>
+            <li><span class="jqtooltip"
+            title="The study of codes for power line communications
+has garnered much interest over the past decade. Various types of
+codes such as permutation codes, frequency permutation arrays,
+and constant composition codes have been proposed over the
+years. In this paper, we study a type of code called bounded
+symbol weight codes which was first introduced by Versfeld et
+al. in 2005, and a related family of codes that we term constant
+symbol weight codes. We provide new upper and lower bounds
+on the size of bounded symbol weight and constant symbol weight
+codes. We also give direct and recursive constructions of codes for
+certain parameters."><a href="http://arxiv.org/pdf/1110.0911">Estimates on the Size of Symbol Weight
+                Codes</a></span>,
+            <br>
+            Yeow Meng Chee, Han Mao Kiah, and Punarbasu Purkayastha,<br>
+            IEEE Transactions on Information Theory, vol. 59, no. 1, pp.
+            301-314, January 2013.<br>
+            <p>
+            In the works of Versfeld <i>et.al</i> 2005 - 2010, the notion
+            of a "same-symbol weight" of a code is introduced. This notion
+            captures the maximum frequency of any symbol over all codewords in
+            the code. For example, if a code of block length n contains the
+            all-zero codeword then the code has the same-symbol weight of
+            n, since the zero symbol occurs with frequency n in the
+            all-zero codeword.<br><br>
+            <strong>Our contribution:</strong>
+            In this work we study the space of all vectors that contain
+            symbols with frequency at most a fixed number, say, r. This
+            space is termed as the <i>bounded symbol weight space.</i> This
+            notion is the same notion as the same-symbol weight.
+            The space of all vectors that have a symbol with exactly
+            a fixed number r, and no symbol occurs more frequently, is
+            termed as the <i>constant symbol weight space.</i> We first
+            determine the sizes of these symbol weight spaces and then use
+            the sizes to estimate the asymptotic form of classical bounds,
+            such as the Gilbert-Varshamov bound, Singleton bound, and
+            Johnson bound, on the size of codes in these spaces. The
+            non-asymptotic versions of these classical bounds are not
+            immediate and it
+            remains an open question to determine nice analytical
+            expressions for them. The primary hurdle in applying the
+            classical bounds arises from the fact that the space is not
+            ball-homogeneous, i.e., the size of the Hamming balls depends
+            on the center.<br><br>
+            We also provide new non-asymptotic lower bounds by studying
+            the symbol weight spaces as unions of disjoint constant
+            composition spaces. We introduce a new distance metric on the
+            space of compositions and use this metric to determine lower
+            bounds on the size of codes in the symbol weight spaces in
+            terms of constant composition codes.<br><br>
+            Finally, we study Reed-Solomon codes and show that
+            the Gilbert-Varshamov bound on codes in symbol weight spaces
+            can be achieved by using subsets of Reed-Solomon codes.</p>
+            </li>
+
+            <li><span class="jqtooltip"
+            title="The use of multiple frequency shift keying modulation
+with permutation codes addresses the problem of permanent
+narrowband noise disturbance in a power line communications
+system. In this paper, we extend this coded modulation scheme
+based on permutation codes to general codes and introduce an
+additional new parameter that helps to more precisely capture a
+code’s performance against permanent narrowband noise. As a
+result, we define a new class of codes, namely, equitable symbol
+weight codes, which are optimal with respect to this measure.">
+            <a href="http://arxiv.org/pdf/1301.2041">
+        Importance of Symbol Equity in Coded Modulation for Power Line
+        Communications</a></span>,
+            <br>
+            Yeow Meng Chee, Han Mao Kiah, Punarbasu Purkayastha, and Chengmin
+            Wang,<br>
+            IEEE Transactions on Communications, vol. 61, no. 10, pp. 4381
+            - 4390, October 2013.<br>
+            <a href="https://github.com/ppurka/papers/tree/master/matrix_code">
+            Source code of simulations</a><br><br>
+            <a href="https://sites.google.com/site/punarbasu/CKPW-Equitable-ISIT2012.pdf?attredirects=0">Conference version</a>, IEEE International Symposium
+            on Information Theory 2012, Boston, MA, USA, pp. 666-670.<br>
+            <i>Student Paper Award finalist.</i> (Student: Han Mao
+            Kiah)<br>
+            <p><strong>Our contribution:</strong>
+            In the coded modulation scheme of Vinck 2000, the permanent
+            narrowband noise typically manifests as the presence of
+            a particular
+            symbol at all time instances of the transmission.  We extend
+            the analysis in Vinck 2000 to more general
+            codes by introducing a new parameter that captures the equity
+            of symbols in a code.  This parameter is more accurate in
+            determining the performance of a code in the presence of
+            permanent narrowband noise. Codes which are optimal with
+            respect to this parameter are shown to be able to correct more
+            narrowband noise than other codes with similar length, size and
+            minimum distance parameters.  Permutation codes, injection
+            codes, and frequency permutation arrays are special cases of
+            such constructions.
+            </p>
+            </li>
+
+            <li><span class="jqtooltip"
+            title="We study the decoding of permutation codes obtained
+from distance preserving maps and distance increasing
+maps from Hamming space. We provide efficient algorithms for
+estimating the q-ary digits of the Hamming space so that decoding
+can be performed in the Hamming space.">
+                <a href="https://sites.google.com/site/punarbasu/Chee_Purkayastha-Decoding-ISIT2012-final.pdf?attredirects=0">Efficient Decoding of Permutation Codes
+                Obtained from Distance Preserving Maps</a></span>,
+            <br>
+            Yeow Meng Chee, and Punarbasu Purkayastha,<br>
+            IEEE International Symposium on Information Theory 2012, Boston,
+            MA, USA, pp. 641-645.<br>
+            <a href="https://sites.google.com/site/punarbasu/Chee_Purkayastha-Efficient_Decoding_Permutations.pdf?attredirects=0">Extended version with all proofs</a><br>
+            <a href="https://github.com/ppurka/papers/tree/master/decoding_permutations">Source code of simulations</a><br>
+            <p> Distance preserving maps (DPMs) from the Hamming space to
+            the permutation space have been the subject of much interest
+            over the past decade due to their application to power line
+            communication channels. However, most of the work has
+            concentrated on constructing DPMs from the binary or ternary
+            Hamming spaces to the permutation space, such that most of the
+            distances between the mapped vectors increase substantially
+            after being mapped to the permutation space. Relatively less
+            work is present on the
+            decoding of the permutation codes thus obtained. The paper by
+            <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4401563"
+                 title="T. G. Swart and H. C. Ferreira, “Decoding
+                 distance-preserving permutation codes for power-line
+                 communications”, Africon 2007, pp. 1–7.">
+                 Swart and Ferreira 2007</a> is one instance where
+            DPMs from the binary Hamming space to the permutation space
+            are constructed with good decoding algorithms for the
+            permutation codes.
+            <br><br>
+            <strong>Our contribution:</strong>
+            In this work, we consider distance preserving maps from the
+            q-ary Hamming space to the permutation space, for q=2,3 and
+            powers of two. The maps are
+            constructed such that it is possible to efficiently decode the
+            received codewords. The main idea behind the construction of
+            the DPMs is to allow the symbols in the q-ary Hamming space to
+            be efficiently estimated from the received permutation symbols.
+            Decoding algorithms for linear codes is then applied to the
+            estimated symbols to obtain the transmitted codeword.
+            However, the requirement of efficient decoding comes at a cost,
+            - we lose on the rate of the code. We conjecture that our
+            method can be extended to DPMs from q-ary Hamming space to the
+            permutation space, for any q. This is verified computationally
+            for values of q up to eight.
+            </p>
+            </li>
+
+        <li><span class="jqtooltip"
+            title="Single-tone frequency shift keying (FSK) modulation with permutation codes has been
+found to be useful in addressing the
+problem of narrowband noise disturbance in power line communications.
+However, this modulation scheme is restrictive since the number of frequencies used must
+be at least as large as the number of symbols in the permutation code.
+In this paper, we propose the use of multitone FSK and 
+binary matrix codes to overcome this restriction. 
+We construct infinite families of efficiently decodable matrix codes
+with rates and relative distances bounded away from zero, that uses only
+a logarithmic number of frequencies in the length of the code. Simulation results
+show that our multitone modulation scheme outperform single-tone modulation schemes.
+">
+            <a
+            href="https://sites.google.com/site/punarbasu/CKP-matrix_codes-full_version.pdf?attredirects=0">
+        Matrix Codes and Multitone Frequency Shift Keying for Power Line
+        Communications</a></span>,
+        <br>
+        Yeow Meng Chee, Han Mao Kiah, and Punarbasu Purkayastha,
+        IEEE International Symposium on Information Theory (ISIT) 2013,
+        Istanbul, Turkey, pp. 2870-2874,
+        6 pages (full version in the link).<br>
+        <a href="https://github.com/ppurka/papers/tree/master/matrix_code">
+        Source code of simulations</a>
+        <p><strong>Our contribution:</strong>
+        In this work, we show that it is possible to construct
+        codes which simultaneously achieve positive rates, positive
+        relative distances, have efficient decoding algorithms, and whose
+        length is not restricted by the alphabet size. We are aware of only
+        Reed Solomon codes which have the first three properties. We show
+        that by using concatenated codes with constant weight inner codes,
+        and by using multiple tone at each time (multitone FSK), we can
+        achieve all these needed properties. Simulations show that the
+        codes perform better than cosets of Reed Solomon codes.</p>
+        </li>
+
+        <li><span class="jqtooltip"
+            title="Binary matrix codes with restricted row and column
+weights are a desirable method of coded modulation for power line
+communication. In this work, we construct such matrix codes that are
+obtained as products of affine codes - cosets of binary linear codes.
+Additionally, the constructions have the property that they are systematic.
+Subsequently, we generalize our construction to irregular product of affine
+codes, where the component codes are affine codes of different
+rates. (Click for pdf)">
+            <a href="http://arxiv.org/pdf/1506.03724v1">Product Construction of Affine Codes</a></span>,
+        <br>
+        Yeow Meng Chee, Han Mao Kiah, Punarbasu Purkayastha, and Patrick
+        Solé,
+        <br>
+        SIAM Journal on Discrete Mathematics, vol. 29, no. 3, 2015, pp.
+        1540 - 1552.<br><br>
+        <a href="files/CKPS_product.pdf">Conference version</a>, IEEE
+        International Symposium on Information Theory (ISIT) 2014,
+        Honolulu, Hawaii, USA, pp. 1441 - 1445.<br>
+        <p><strong>Our contribution:</strong>
+        We generalize Vinck's construction to codes that are efficiently
+        decodable, but whose block lengths are not restricted by the
+        alphabet size (for example permutation codes have this
+        restriction). We used a coded modulation scheme that uses multitone
+        frequency shift keying as the modulation scheme. We showed that by
+        taking products of affine codes (a linear code shifted by
+        a constant nonzero vector), it is possible to obtain "good" codes
+        that can correct all the four types of noises in the power line
+        channel, and that simultaneously achieve the following properties:
+        they have positive rates, positive relative distances, and their
+        lengths are not restricted by the alphabet size. In addition the
+        codes have the property that they are systematic and are cosets of
+        linear codes, and thereby have efficient decoding algorithms.
+        </p>
+        </li>
+        </ol>
+        </div>
+
+    <h3><a href="#"><strong>Constructions of optimal or near-optimal codes
+    </strong></a></h3>
+        <div>
+        <ol>
+            <li><span class="jqtooltip"
+        title="A cross-bifix-free code is a set of words in which
+no prefix of any length of any word is the suffix of any
+word in the set. Cross-bifix-free codes arise in the study of
+distributed sequences for frame synchronization. We provide a
+new construction of cross-bifix-free codes which generalize the
+construction in Bajic (2007) to longer code lengths and to any
+alphabet size. The codes are shown to be nearly optimal in size.
+We also establish new results on Fibonacci sequences, that are
+used in estimating the size of the cross-bifix-free codes.">
+            <a href="http://arxiv.org/pdf/1209.0236">Cross-Bifix-Free Codes Within a Constant Factor
+                of Optimality</a></span>,
+            <br> Yeow Meng Chee, Han Mao Kiah, Punarbasu
+            Purkayastha, and Chengmin Wang,<br> IEEE Transactions on
+            Information Theory, vol. 59, no. 7, pp. 4668 - 4674, July
+            2013.<br>
+            <p>A crucial requirement to reliably transmit information in
+            a digital communication system is to establish synchronization
+            between the transmitter and the receiver. Synchronization is
+            required to determine the start of a symbol as well as to
+            determine the start of a frame of data in the received signals.
+            The objective in current methods for achieving faster frame
+            synchronization is to search for a word within a specified
+            Hamming distance of the transmitted synchronization word,
+            instead of exactly matching the synchronization word. This
+            procedure requires a simultaneous search for a set of
+            synchronization words, which has the property that a prefix of
+            any length of any word is not the suffix of any word in the
+            set.  This property of the set was termed as
+            <i>cross-bifix-free</i> in the works of Bajic, <i>et.al</i>
+            2003-2007. We term this set as a <i>cross-bifix-free code.</i>
+            <br><br>
+            <strong>Our contribution:</strong>
+            We provide new constructions of these codes which extend the
+            construction in
+            <a href="http://www.cost2100.org/index.php?page=tds-lisbon---td-07-001-td-07-020"
+                title="D. Bajic, On Construction of Cross-Bifix-Free Kernel Sets, 2nd MCM COST 2100, TD(07)237, Lisbon, Portugal, February 2007.">
+                Bajic 2007</a> in two ways. In that work the words in the
+            cross-bifix-free codes constructed were over the binary
+            alphabet, were of length up to eight, and the sizes of the codes
+            satisfied a Fibonacci recursion. We extend this construction to
+            any lengths and to any alphabet size. The sizes of the binary
+            cross-bifix-free codes obtained from our constructions are
+            optimal for all small lengths (except for an instance at
+            length nine). The near optimality of the general construction is
+            proved by showing that the sizes satisfy a generalized
+            Fibonacci recursion, and then by establishing properties of
+            the generalized Fibonacci numbers.
+            </p>
+            </li>
+
+            <li><span class="jqtooltip"
+            title="In this article we construct an infinite family of
+linear error correcting codes over Fq for any prime power q.
+The code parameters are
+[q^(2t) + q^(t−1) − q^(2t−1) − q^t, 2t + 1, q^(2t) + q^(2t−2) + q^(t−1) − 2q^(2t−1) − q^t ],
+for any positive integer t. This family is a generalisation of the
+optimal self-complementary binary codes with parameters
+[2u^2 − u, 2t + 1, u^2 − u],
+where u = 2^(t−1) . The codes are obtained by considering a submatrix
+of a specially constructed generalised Hadamard matrix.
+The optimality of the family is confirmed by using a recently
+derived generalisation of the Grey-Rankin bound when t > 1,
+and the Griesmer bound when t = 1.">
+                <a href="https://sites.google.com/site/punarbasu/BCP-hadamard-ISIT2012.pdf?attredirects=0">Optimal Family of q-ary Codes Obtained From
+                a Substructure of Generalised Hadamard Matrices</a></span>,
+            <br>
+            Carl Braken, Yeow Meng Chee, and Punarbasu Purkayastha,<br>
+            IEEE International Symposium on Information Theory 2012, Boston,
+            MA, USA, pp. 116-119.<br>
+            <p>
+            <strong>Our contribution:</strong>
+            We construct a new family of linear error correcting
+            codes in the q-ary Hamming space. These codes are
+            self-complementary, that is, the all-one vector is present in
+            the code. The codes are obtained by performing code operations
+            such as extension, augmentation, and concatenation of
+            a specific family of Hadamard codes that are constructed in
+            this work. The codes are shown to be optimal with respect to
+            the generalized Grey-Rankin bound, and for a specific
+            parameter, the Griesmer bound.
+            </p>
+            </li>
+
+            <li>Also, the article "Estimates on the Size of Symbol Weight
+            Codes."</li>
+        </ol>
+        </div>
+
+    <h3><a href="#"><strong>Bounds and constructions of codes in the
+                ordered Hamming space</strong></a></h3>
+        <div>
+            <p>The <i>ordered Hamming space</i>, also known as the
+            Niederreiter-Rosenbloom-Tsfasman space, was introduced by
+            <a href="http://link.springer.com/article/10.1007%2FBF01490206?LI=true"
+                title="H. Niederreiter, Low-discrepancy point sets,
+                Monatsh. Math., vol. 102, no. 2, 1986, pp. 155–167.">
+                Niederreiter 1986</a> and independently by
+            <a href="http://www.mathnet.ru/php/archive.phtml?wshow=paper&amp;jrnid=ppi&amp;paperid=359&amp;option_lang=eng"
+                title="M. Yu. Rosenbloom and M. A. Tsfasman, Codes for the
+                m-metric, Problems of Information Transmission, vol. 33,
+                no. 1,  1997, pp. 45–52.">
+            Rosenbloom and Tsfasman 1997</a>.
+            Niederreiter introduced this metric in the study of
+            distributions of point sets in the unit cube called (t,m,s)-nets.
+            (t,m,s)-nets are of interest because of their
+            application to quasi-Monte-Carlo integration of functions
+            defined on the unit cube. Rosenbloom and Tsfasman introduced
+            this metric in order to describe a new communication channel.
+            This metric has also occured in the context of fading channels
+            in the work of <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?isnumber=34609&arnumber=1650367&count=41&index=23"
+                title="S. Tavildar and P. Viswanath,
+ Approximately Universal Codes Over Slow Fading Channels,
+IEEE Trans. Inform. Theory, July 2006, vol. 52, no. 7, pp. 3233 - 3258">
+                Tavildar and Viswanath 2006</a>.
+            The work of <a href="http://cms.math.ca/10.4153/CJM-1999-017-5?abfmt=ltx"
+                title="W. J. Martin and D. R. Stinson, Association schemes
+                for ordered orthogonal arrays and (T, M, S)-nets, Canad. J.
+                Math., vol. 51, no. 2, 1999, pp. 326-346.">
+            Martin and Stinson 1999</a> established that certain
+            objects called ordered orthogonal arrays (OOAs), which are
+            closely related to (t,m,s)-nets, are dual objects to ordered
+            codes, in the context of Delsarte’s theory of Association
+            Schemes. Bounds on OOAs and (t,m,s)-nets are of interest
+            for estimating the error of quasi-Monte-Carlo integration.
+            <br><br>
+
+            Closely connected to the notion of the ordered Hamming space is
+            the poset metric space.
+            The poset space has been studied for nearly two decades as a
+            generalization of the Hamming space and also because of its
+            connection to distributions of points in the unit cube for
+            numerical integration of functions. Vectors in this space have
+            a partial ordering in their coordinate indices.  The distance
+            is measured as the sum of the largest nonzero indices in
+            a vector. As an example, consider the poset space which has the
+            coordinate indices {1,2,3,4} with the ordering 1 &le; 2 &le; 3
+            and 4 &le; 3, and consider the vector [1,0,1,0] as an element
+            in this space. In this case, the weight of this vector in the
+            poset space is three because the element in the third
+            coordinate is nonzero and is at index three in the ordering.
+            On the other hand the weight of the
+            vector [0,0,0,1] is one because the fourth coordinate is at index
+            one in the ordering. A special case of the poset metric is the
+            ordered Hamming metric in which the coordinates are
+            ordered as disjoint chains of equal length.
+            To put the Hamming metric in perspective, note that the Hamming
+            metric corresponds to having no ordering among the coordinate
+            indices, i.e., it is an anti-chain.<br><br>
+            Our work in this area is described below.
+            </p>
+        <ol>
+            <li><span class="jqtooltip"
+            title="We study q-ary codes with distance defined by a partial order
+of the coordinates of the codewords. Maximum Distance Separable (MDS)
+codes in the poset metric have been studied in a number of earlier works. We
+consider codes that are close to MDS codes by the value of their minimum
+distance. For such codes, we determine their weight distribution, and in the
+particular case of the “ordered metric” characterize distributions of points in
+the unit cube defined by the codes. We also give some constructions of codes
+in the ordered Hamming space.">
+                <a href="http://arxiv.org/pdf/1004.5601">Near MDS poset codes and distributions</a></span>,
+            <br>
+            Alexander Barg, and Punarbasu Purkayastha,<br>
+            Error-Correcting Codes, Cryptography and Finite Geometries,
+            Editors: A. Bruen and D. Wehlau, AMS series in Contemporary
+            Mathematics, vol. 523, 2010, pp. 135-148.<br><br>
+            <a href="https://sites.google.com/site/punarbasu/BP_NMDS_ISIT.pdf?attredirects=0">Conference version</a>,<br>
+            IEEE International Symposium on Information Theory 2010, Austin,
+            Texas, USA, pp. 1310-1314.<br>
+            <i>Student Paper Award finalist.</i><br>
+            <p>Codes which have parameters close to or at the theoretical
+            upper bounds are of much interest since they are optimal (or
+            close to optimal) for their values of the minimum distance.
+            Maximum Distance Separable (MDS) codes are a famous example of
+            such codes, whose minimum distance attains the Singleton upper
+            bound. MDS codes in the Hamming space are connected with some
+            classical problems in finite geometries related to the
+            existence of some extremal configurations in projective
+            geometries. MDS codes in the ordered Hamming space are
+            equivalent to <i>optimal distributions</i> of points in the unit
+            cube. Near MDS codes are codes which have distance just one
+            less than the distance of MDS codes.  However, their second
+            generalized Hamming weight, which is the minimum support of any
+            two-dimensional subcode of a code, coincides with that of the
+            MDS codes.<br><br>
+
+            <strong>Our contribution:</strong>
+            In this work, we showed that the notion of linear Near MDS codes
+            and generalized Hamming weights can be generalized to the poset
+            space, and determined the properties and the weight distribution
+            of such codes. In particular,
+            we studied the structure of the code simultaneously as a linear
+            code and as an <i>ordered orthogonal array</i>. This enabled us
+            to establish the weight distribution of the code and provide
+            its relation to uniform distributions of points in the unit
+            cube such as <i>optimal distributions</i> and
+            <i>(t,m,s)-nets</i>.
+            </p>
+            </li>
+
+            <li><span class="jqtooltip"
+            title="We derive new estimates of the size of codes and
+orthogonal arrays in the ordered Hamming space (the
+Niederreiter-Rosenbloom-Tsfasman space). We also show that the eigenvalues
+of the ordered Hamming scheme, the association scheme that describes the
+combinatorics of the space, are given by the multivariate Krawtchouk
+polynomials, and establish some of their properties.">
+                <a href="http://arxiv.org/pdf/cs/0702033">Bounds on ordered codes and orthogonal
+                arrays</a></span>,
+            <br>
+            Alexander Barg, and Punarbasu Purkayastha,<br>
+            Moscow Mathematical Journal, vol. 9, no. 2, 2009, pp. 211-243.<br>
+            <a href="https://sites.google.com/site/punarbasu/files/BargPurkayastha_BoundsOnOrderedCodesAndOrthogonalArrays2007.pdf?attredirects=0">Conference version</a>,<br>
+            IEEE International Symposium on Information Theory 2007, Nice,
+            France, pp. 331-335.<br>
+            <p>
+            <strong>Our contribution:</strong>
+            In this work we studied a special case of the poset
+            metric space called the ordered Hamming space.  We studied the
+            combinatorial structure of the ordered Hamming space, in the
+            context of Association Schemes, and established the properties of
+            orthogonal polynomials, called the multivariate Krawtchouk
+            polynomials, associated with this ordered Hamming scheme. This
+            study enabled us to determine linear programming (LP) upper
+            bounds on the size of codes (and corresponding lower bounds on
+            ordered orthogonal arrays) in this space. Traditionally, the LP
+            bound for codes in the Hamming space was obtained by
+            determining the extremal roots of the univariate Krawtchouk
+            polynomials. Owing to the difficulty in estimating the extremal
+            roots of the multivariate Krawtchouk polynomials, we instead
+            applied the <i>Spectral Method</i>, first introduced by
+            <a
+                href="http://ieeexplore.ieee.org/xpls/abs_all.jsp/arnumber=1624644"
+                title="C. Bachoc, Linear programming bounds for codes in
+                Grassmannian spaces, IEEE Trans. Inform. Theory, vol. 52,
+                pp. 2111–2126, May 2006.">
+            Bachoc 2006</a> in the context of LP bounds on codes in the
+            Grassmannian space. The results obtained give the best known
+            asymptotic upper bounds on the size of codes in the ordered
+            Hamming space.
+            </p>
+            </li>
+        </ol>
+        </div>
+    <h3><a href="#"><strong>Extremal problems on codes in the Hamming space</strong></a></h3>
+        <div>
+        <ol>
+            <li>New bound on sets with restricted intersections (see
+            <a href="https://sites.google.com/site/punarbasu/files/punarbasu_thesis.pdf?attredirects=0">
+            Thesis</a>, Chapter 6)<br>
+            <p>
+            <strong>Our contribution:</strong>
+            We extended a polynomial technique of <a href="http://books.google.com/books/about/An_Algebraic_Approach_to_the_Association.html?id=zna0SgAACAAJ&amp;redir_esc=y"
+                title="P. Delsarte, An algebraic approach to the
+                association schemes of coding theory, Philips Research
+                Repts. Suppl., vol. 10, 1973, pp. 1–97.">
+                Delsarte 1973</a> to provide
+            bounds on a family of subsets of a set, with restricted
+            pairwise intersections between the subsets. The polynomial
+            method in Delsarte 1973 studies pairs of points in the Hamming
+            space and uses the association scheme of the Hamming space to
+            provide bounds on codes with restricted distances. We
+            identified a subset of a set of n elements with the support of
+            an n-dimensional vector in the binary Hamming space. We used
+            a refinement of the association scheme called the Terwilliger
+            algebra and studied the distances between triplets of points in
+            the Hamming space to provide bounds on the family of
+            subsets.
+            </p>
+            </li>
+            <li>New upper bounds on constant weight codes in the binary
+            Hamming space (see <a
+                href="https://sites.google.com/site/punarbasu/files/punarbasu_thesis.pdf?attredirects=0">Thesis</a>, Chapter 7)<br>
+            <p>
+            <strong>Our contribution:</strong>
+            The Johnson bound for constant weight codes in the binary
+            Hamming space is a well known upper bound. It is typically
+            proved by averaging over all the distances in the constant
+            weight code. We showed that this averaging technique can be
+            adapted to provide sharper bounds on constant weight codes.  In
+            particular, we provided two new upper bounds which improve the
+            existing Johnson bound for a varied range of parameters. The
+            first bound is obtained by considering a weighted average of
+            the distances in the constant weight code. The second bound is
+            obtained by observing that the L2 norm (with uniform measure)
+            of a sequence of numbers is at least as large as the L1 norm
+            (with uniform measure) of the sequence. These new bounds are
+            also valid in the region at or beyond the Johnson radius where
+            the Johnson bound does not exist. The values of these new
+            bounds are sometimes exact and meet the table of bounds for
+            constant weight codes presented in <a
+                href="http://ieeexplore.ieee.org/xpls/abs_all.jsp/arnumber=887851"
+                title="E. Agrell, A. Vardy, and K. Zeger, Upper bounds for
+                constant-weight codes, IEEE Trans. Inform. Theory, vol. 46,
+                2373–2395, November 2000">
+            Agrell, Vardy and Zeger 2000</a>.
+            The techniques we introduced are also adapted to improve
+            non-asymptotic Johnson bounds on constant weight codes in the
+            q-ary Hamming space.</p>
+            </li>
+            <li>Also, the article "Estimates on the Size of Symbol Weight
+            Codes"</li>
+        </ol>
+        </div>
+    </div>
+
+    </div> <!-- end of bodycontent -->
+    </div> <!-- end of bodyborder  -->
+
+    <div id="foot">
+        <p>
+        <!-- DATE --> Last modified: Nov 21, 2015
+        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <a href="http://validator.w3.org/check?uri=referer">
+            <img src="http://www.w3.org/Icons/valid-html401"
+            alt="Valid HTML 4.01 Strict" height="20" width="60">
+        </a>
+        </p>
+    </div>
+
+
+</body>
+</html>
