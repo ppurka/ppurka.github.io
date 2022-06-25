@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
     <meta charset="utf-8">
@@ -13,24 +13,15 @@
     <link rel="stylesheet" href="style_common.css" type="text/css">
     <link rel="stylesheet" href="style_research.css" type="text/css">
 
-    <!-- Load jquery - try first from google servers -->
+    <!-- Load jquery -->
     <script type="text/javascript"
-        src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js">
-    </script>
-    <!-- If jquery is not loaded try from local cache -->
-    <script type="text/javascript">window.jQuery || document.write(
-        '<script type="text/javascript" src="js/jquery-1.8.2.min.js"><\/script>')
+        src="js/jquery-1.8.2.min.js">
     </script>
 
-    <!-- Load the jquery ui - try first from google servers -->
+    <!-- Load the jquery ui -->
     <script type="text/javascript"
-        src="//ajax.googleapis.com/ajax/libs/jquery-ui/1.9.1/jquery-ui.min.js">
+        src="js/jquery-ui-1.9.1.custom.min.js">
     </script>
-    <!-- if jquery ui is not loaded try from local cache -->
-    <script type="text/javascript">window.jQuery.ui || document.write(
-        '<script type="text/javascript" src="js/jquery-ui-1.9.1.custom.min.js"><\/script>')
-    </script>
-
 
     <!-- load accordion -->
     <script type="text/javascript">
@@ -44,6 +35,7 @@
              });
         });
     </script>
+
     <!-- load the tooltip -->
     <script type="text/javascript">
         $(function(){
@@ -51,6 +43,7 @@
         });
     </script>
 
+    <!-- hopefully comes up early in Google search if we put some googly stuff here -->
     <!-- Add Google analytics - this should help with indexing -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QR48Y6G91L"></script>
@@ -335,7 +328,7 @@ weight codes, which are optimal with respect to this measure.">
             - 4390, October 2013.<br>
             <a href="https://github.com/ppurka/papers/tree/master/matrix_code">
             Source code of simulations</a><br><br>
-            <a href="https://sites.google.com/site/punarbasu/CKPW-Equitable-ISIT2012.pdf?attredirects=0">Conference version</a>, IEEE International Symposium
+            <a href="files/CKPW-Equitable-ISIT2012.pdf">Conference version</a>, IEEE International Symposium
             on Information Theory 2012, Boston, MA, USA, pp. 666-670.<br>
             <i>Student Paper Award finalist.</i> (Student: Han Mao
             Kiah)<br>
@@ -363,13 +356,13 @@ from distance preserving maps and distance increasing
 maps from Hamming space. We provide efficient algorithms for
 estimating the q-ary digits of the Hamming space so that decoding
 can be performed in the Hamming space.">
-                <a href="https://sites.google.com/site/punarbasu/Chee_Purkayastha-Decoding-ISIT2012-final.pdf?attredirects=0">Efficient Decoding of Permutation Codes
+                <a href="files/Chee_Purkayastha-Decoding-ISIT2012-final.pdf">Efficient Decoding of Permutation Codes
                 Obtained from Distance Preserving Maps</a></span>,
             <br>
             Yeow Meng Chee, and Punarbasu Purkayastha,<br>
             IEEE International Symposium on Information Theory 2012, Boston,
             MA, USA, pp. 641-645.<br>
-            <a href="https://sites.google.com/site/punarbasu/Chee_Purkayastha-Efficient_Decoding_Permutations.pdf?attredirects=0">Extended version with all proofs</a><br>
+            <a href="files/Chee_Purkayastha-Efficient_Decoding_Permutations.pdf">Extended version with all proofs</a><br>
             <a href="https://github.com/ppurka/papers/tree/master/decoding_permutations">Source code of simulations</a><br>
             <p> Distance preserving maps (DPMs) from the Hamming space to
             the permutation space have been the subject of much interest
@@ -422,7 +415,7 @@ a logarithmic number of frequencies in the length of the code. Simulation result
 show that our multitone modulation scheme outperform single-tone modulation schemes.
 ">
             <a
-            href="https://sites.google.com/site/punarbasu/CKP-matrix_codes-full_version.pdf?attredirects=0">
+            href="files/CKP-matrix_codes-full_version.pdf">
         Matrix Codes and Multitone Frequency Shift Keying for Power Line
         Communications</a></span>,
         <br>
@@ -521,9 +514,12 @@ used in estimating the size of the cross-bifix-free codes.">
             <strong>Our contribution:</strong>
             We provide new constructions of these codes which extend the
             construction in
-            <a href="https://www.cost2100.org/index.php?page=tds-lisbon---td-07-001-td-07-020"
-                title="D. Bajic, On Construction of Cross-Bifix-Free Kernel Sets, 2nd MCM COST 2100, TD(07)237, Lisbon, Portugal, February 2007.">
-                Bajic 2007</a> in two ways. In that work the words in the
+            <!--a href="https://www.cost2100.org/index.php?page=tds-lisbon---td-07-001-td-07-020"
+                title="D. Bajic, On Construction of Cross-Bifix-Free Kernel
+Sets, 2nd MCM COST 2100, TD(07)237, Lisbon, Portugal, February 2007."-->
+                "Bajic 2007" (D. Bajic, On Construction of Cross-Bifix-Free Kernel
+Sets, 2nd MCM COST 2100, TD(07)237, Lisbon, Portugal, February 2007.)<!--/a-->
+                                    in two ways. In that work the words in the
             cross-bifix-free codes constructed were over the binary
             alphabet, were of length up to eight, and the sizes of the codes
             satisfied a Fibonacci recursion. We extend this construction to
@@ -550,7 +546,7 @@ of a specially constructed generalised Hadamard matrix.
 The optimality of the family is confirmed by using a recently
 derived generalisation of the Grey-Rankin bound when t > 1,
 and the Griesmer bound when t = 1.">
-                <a href="https://sites.google.com/site/punarbasu/BCP-hadamard-ISIT2012.pdf?attredirects=0">Optimal Family of q-ary Codes Obtained From
+                <a href="files/BCP-hadamard-ISIT2012.pdf">Optimal Family of q-ary Codes Obtained From
                 a Substructure of Generalised Hadamard Matrices</a></span>,
             <br>
             Carl Braken, Yeow Meng Chee, and Punarbasu Purkayastha,<br>
@@ -584,11 +580,13 @@ and the Griesmer bound when t = 1.">
                 title="H. Niederreiter, Low-discrepancy point sets,
                 Monatsh. Math., vol. 102, no. 2, 1986, pp. 155–167.">
                 Niederreiter 1986</a> and independently by
-            <a href="https://www.mathnet.ru/php/archive.phtml?wshow=paper&amp;jrnid=ppi&amp;paperid=359&amp;option_lang=eng"
+            <!--a href="https://www.mathnet.ru/php/archive.phtml?wshow=paper&amp;jrnid=ppi&amp;paperid=359&amp;option_lang=eng"
                 title="M. Yu. Rosenbloom and M. A. Tsfasman, Codes for the
                 m-metric, Problems of Information Transmission, vol. 33,
-                no. 1,  1997, pp. 45–52.">
-            Rosenbloom and Tsfasman 1997</a>.
+                no. 1,  1997, pp. 45–52."-->
+            "Rosenbloom and Tsfasman 1997" (M. Yu. Rosenbloom and M. A. Tsfasman, Codes for the
+                m-metric, Problems of Information Transmission, vol. 33,
+                no. 1,  1997, pp. 45–52.)<!--/a-->.
             Niederreiter introduced this metric in the study of
             distributions of point sets in the unit cube called (t,m,s)-nets.
             (t,m,s)-nets are of interest because of their
@@ -653,7 +651,7 @@ in the ordered Hamming space.">
             Error-Correcting Codes, Cryptography and Finite Geometries,
             Editors: A. Bruen and D. Wehlau, AMS series in Contemporary
             Mathematics, vol. 523, 2010, pp. 135-148.<br><br>
-            <a href="https://sites.google.com/site/punarbasu/BP_NMDS_ISIT.pdf?attredirects=0">Conference version</a>,<br>
+            <a href="files/BP_NMDS_ISIT.pdf">Conference version</a>,<br>
             IEEE International Symposium on Information Theory 2010, Austin,
             Texas, USA, pp. 1310-1314.<br>
             <i>Student Paper Award finalist.</i><br>
@@ -699,7 +697,7 @@ polynomials, and establish some of their properties.">
             <br>
             Alexander Barg, and Punarbasu Purkayastha,<br>
             Moscow Mathematical Journal, vol. 9, no. 2, 2009, pp. 211-243.<br>
-            <a href="https://sites.google.com/site/punarbasu/files/BargPurkayastha_BoundsOnOrderedCodesAndOrthogonalArrays2007.pdf?attredirects=0">Conference version</a>,<br>
+            <a href="files/BargPurkayastha_BoundsOnOrderedCodesAndOrthogonalArrays2007.pdf">Conference version</a>,<br>
             IEEE International Symposium on Information Theory 2007, Nice,
             France, pp. 331-335.<br>
             <p>
@@ -735,7 +733,7 @@ polynomials, and establish some of their properties.">
         <div>
         <ol>
             <li>New bound on sets with restricted intersections (see
-            <a href="https://sites.google.com/site/punarbasu/files/punarbasu_thesis.pdf?attredirects=0">
+            <a href="files/punarbasu_thesis.pdf">
             Thesis</a>, Chapter 6)<br>
             <p>
             <strong>Our contribution:</strong>
@@ -759,7 +757,7 @@ polynomials, and establish some of their properties.">
             </li>
             <li>New upper bounds on constant weight codes in the binary
             Hamming space (see <a
-                href="https://sites.google.com/site/punarbasu/files/punarbasu_thesis.pdf?attredirects=0">Thesis</a>, Chapter 7)<br>
+                href="files/punarbasu_thesis.pdf">Thesis</a>, Chapter 7)<br>
             <p>
             <strong>Our contribution:</strong>
             The Johnson bound for constant weight codes in the binary
